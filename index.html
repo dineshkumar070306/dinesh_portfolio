@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dineshkumar S | IT Student &amp; Developer</title>
+  <meta name="description" content="Portfolio of Dineshkumar S — Information Technology student, developer and prompt engineering enthusiast from Coimbatore.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dineshkumar S | IT Student & Developer">
+  <meta property="og:description" content="Portfolio of Dineshkumar S — Information Technology student, developer and prompt engineering enthusiast from Coimbatore.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/og-cover.png">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Dineshkumar S — home">&lt;Dinesh<span>/</span>&gt;</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="resume/resume.pdf" class="btn btn-ghost nav-resume" download>Resume</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-kicker">// hello world</p>
+        <h1 class="hero-title">
+          Hi, I'm <span class="hero-name">Dineshkumar S</span>
+        </h1>
+        <h2 class="hero-role">Information Technology Student <span class="dot">·</span> Developer <span class="dot">·</span> Prompt Engineer</h2>
+        <p class="hero-desc">Building smart technology solutions through code, creativity and continuous learning.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="resume/resume.pdf" class="btn btn-outline" download>Download Resume</a>
+          <a href="#contact" class="btn btn-text">Let's Connect →</a>
+        </div>
+
+        <div class="hero-social">
+          <a href="https://github.com/dineshkumar070306" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.37-3.87-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.55 10.55 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/dineshkumar-s-503826329/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <p>whoami.sh</p>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="type-line" id="typeLine"></p>
+            <p class="cursor-line"><span class="blink">▊</span></p>
+          </div>
+        </div>
+        <div class="orbit-ring"></div>
+        <div class="orbit-ring ring-2"></div>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#about" aria-label="Scroll to about section"><span></span></a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div>
+        <p class="section-tag">// about</p>
+        <h2 class="section-title">Where curiosity meets code</h2>
+        <p class="about-p">
+          I'm an Information Technology undergraduate at Dr. N.G.P. Institute of Technology, Coimbatore,
+          currently in my second year with a CGPA of 8.6. My work sits at the intersection of embedded
+          systems, web development and applied AI — from wiring sensors into an IoT hive monitor to
+          shaping prompts that make language models genuinely useful.
+        </p>
+        <p class="about-p">
+          I write code in Java, Python and C, build interfaces with HTML and CSS, and spend a good part
+          of my time exploring how prompt engineering can turn AI into a practical problem-solving tool
+          rather than a novelty. I care about building things that work reliably, explain themselves
+          clearly, and hold up outside a demo.
+        </p>
+        <div class="about-focus">
+          <div class="focus-item"><span>IT Student</span></div>
+          <div class="focus-item"><span>Full-stack curious</span></div>
+          <div class="focus-item"><span>Prompt Engineering</span></div>
+          <div class="focus-item"><span>Problem Solving</span></div>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <div class="about-card-row"><span class="label">Location</span><span>Coimbatore, Tamil Nadu, India</span></div>
+        <div class="about-card-row"><span class="label">Degree</span><span>B.Tech, Information Technology</span></div>
+        <div class="about-card-row"><span class="label">Institute</span><span>Dr. N.G.P. Institute of Technology</span></div>
+        <div class="about-card-row"><span class="label">Duration</span><span>2024 – 2028</span></div>
+        <div class="about-card-row"><span class="label">CGPA</span><span>8.6</span></div>
+        <div class="about-card-row"><span class="label">Focus</span><span>IoT · Web · Prompt Engineering</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <p class="section-tag">// skills</p>
+      <h2 class="section-title">What I work with</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <div class="chip-row">
+            <span class="chip">Java</span>
+            <span class="chip">Python</span>
+            <span class="chip">C</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <div class="chip-row">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Other</h3>
+          <div class="chip-row">
+            <span class="chip">Web Development</span>
+            <span class="chip">Prompt Engineering</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <div class="chip-row">
+            <span class="chip">VS Code</span>
+            <span class="chip">Turbo C++</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Canva</span>
+            <span class="chip">Excel</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Soft Skills</h3>
+          <div class="chip-row">
+            <span class="chip">Problem Solving</span>
+            <span class="chip">Team Work</span>
+            <span class="chip">Time Management</span>
+            <span class="chip">Leadership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="section-tag">// projects</p>
+      <h2 class="section-title">Things I've built</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card project-iot">
+          <div class="project-top">
+            <span class="project-kind">IoT System</span>
+          </div>
+          <h3>SmartBeeKeeping Solutions</h3>
+          <p>An IoT-based monitoring system using ESP32 to provide real-time data about hive conditions, helping catch problems before they become losses.</p>
+          <ul class="project-features">
+            <li>Temperature monitoring</li>
+            <li>Humidity monitoring</li>
+            <li>Weight monitoring</li>
+            <li>Motion detection</li>
+            <li>Early detection of hive issues</li>
+            <li>Remote data visualization</li>
+          </ul>
+          <div class="chip-row">
+            <span class="chip chip-mono">ESP32</span>
+            <span class="chip chip-mono">Embedded C</span>
+            <span class="chip chip-mono">ThingSpeak</span>
+            <span class="chip chip-mono">IoT</span>
+            <span class="chip chip-mono">Sensors</span>
+          </div>
+        </article>
+
+        <article class="project-card project-hub">
+          <div class="project-top">
+            <span class="project-kind">Platform</span>
+          </div>
+          <h3>OPPORTUNE HUB</h3>
+          <p>A smart career and internship assistance platform that provides skill-based opportunity recommendations and chatbot support using database and programming technologies.</p>
+          <div class="chip-row">
+            <span class="chip chip-mono">Database</span>
+            <span class="chip chip-mono">Programming</span>
+            <span class="chip chip-mono">Chatbot</span>
+            <span class="chip chip-mono">Career Technology</span>
+          </div>
+        </article>
+
+        <article class="project-card project-web">
+          <div class="project-top">
+            <span class="project-kind">Web App</span>
+          </div>
+          <h3>All Sorting Visualizer</h3>
+          <p>An interactive sorting algorithm visualizer that demonstrates different sorting algorithms through real-time visual animations — making Data Structures and Algorithms easier to learn by showing each step as it happens.</p>
+          <div class="chip-row">
+            <span class="chip chip-mono">DSA</span>
+            <span class="chip chip-mono">Sorting Algorithms</span>
+            <span class="chip chip-mono">HTML</span>
+            <span class="chip chip-mono">CSS</span>
+            <span class="chip chip-mono">JavaScript</span>
+          </div>
+          <a href="https://dineshkumar070306.github.io/all_sorting_visualizer/" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-demo">Live Demo →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= JOURNEY (Internship + Education) ================= -->
+  <section class="section section-alt" id="journey">
+    <div class="section-inner">
+      <p class="section-tag">// journey</p>
+      <h2 class="section-title">Experience &amp; education</h2>
+
+      <div class="timeline">
+        <div class="timeline-line" id="timelineLine"></div>
+
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025</span>
+            <h3>AWS – DevOps Internship</h3>
+            <p>Completed hands-on training in AWS Cloud and DevOps practices, gaining exposure to cloud infrastructure, CI/CD workflows and deployment automation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 – 2028</span>
+            <h3>B.Tech, Information Technology</h3>
+            <p>Dr. N.G.P. Institute of Technology &middot; CGPA 8.6</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2021 – 2022</span>
+            <h3>Higher Secondary Certificate</h3>
+            <p>Government Higher Secondary School &middot; 80%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <p class="section-tag">// certifications</p>
+      <h2 class="section-title">Certifications</h2>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <svg class="cert-icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 3h8l3 3v15H5V6l3-3Z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+          <h3>Prompt Engineering</h3>
+          <p>5-Day Value Added Course conducted by Visaithalam Solutions at Dr. N.G.P. Institute of Technology, Coimbatore.</p>
+          <span class="cert-date">21–25 July 2025</span>
+        </div>
+
+        <div class="cert-card">
+          <svg class="cert-icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+          <h3>Ignite the Insight Engine – VARNAM'26</h3>
+          <p>Enhanced knowledge in data analytics, data visualization and data-driven decision-making through practical learning sessions.</p>
+        </div>
+
+        <div class="cert-card">
+          <svg class="cert-icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="6" r="2.2"/><circle cx="7" cy="18" r="2.2"/><circle cx="17" cy="12" r="2.2"/><path d="M7 8.2V15.8M8.8 12H15M9.5 7.2 15 10.5"/></svg>
+          <h3>Git Training</h3>
+          <p>Conducted at Dr. N.G.P. Institute of Technology, offered by EduPyramids in association with SINE, IIT Bombay. Strengthened understanding of version control and collaborative development practices.</p>
+          <div class="cert-meta">
+            <span class="cert-date">13 February 2026</span>
+            <span>Score: 86.67%</span>
+            <span>1 Credit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner contact-grid">
+      <div>
+        <p class="section-tag">// contact</p>
+        <h2 class="section-title">Let's build something smart together.</h2>
+        <p class="about-p">Have a project, internship opportunity or just want to talk tech? My inbox is open.</p>
+
+        <div class="contact-list">
+          <a href="mailto:dinesh07032006@gmail.com" class="contact-row">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>
+            dinesh07032006@gmail.com
+          </a>
+          <a href="tel:+917603982760" class="contact-row">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c1 .3 2 .5 3 .6a2 2 0 0 1 1.7 2Z"/></svg>
+            +91 76039 82760
+          </a>
+          <a href="https://www.linkedin.com/in/dineshkumar-s-503826329/" target="_blank" rel="noopener noreferrer" class="contact-row">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            linkedin.com/in/dineshkumar-s
+          </a>
+          <a href="https://github.com/dineshkumar070306" target="_blank" rel="noopener noreferrer" class="contact-row">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.37-3.87-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.55 10.55 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+            github.com/dineshkumar070306
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <p class="form-note">This form doesn't send messages yet — please reach out directly by email or phone until it's connected.</p>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Designed &amp; built by Dineshkumar S</p>
+    <p class="footer-year">&copy; <span id="year"></span></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
